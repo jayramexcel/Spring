@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC  "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<!-- <bean id="ds"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+		<property name="username" value="hr"/>
+		<property name="password" value="hr"/>
+	</bean> -->
+	<import resource="classpath:com/excel/dao_02/DataSource.xml"/>
+	<bean id="sel" class="com.excelonline.spring.dao_02._01ConnectionPooling._01DAOConnectionPoolingDummy.SelectImple">
+		<property name="ds" ref="dataSource"/>
+	</bean>
+</beans>
