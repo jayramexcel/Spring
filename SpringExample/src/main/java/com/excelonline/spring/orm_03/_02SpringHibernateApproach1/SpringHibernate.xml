@@ -4,7 +4,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-	<bean id = "ds" class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<import resource="classpath:com/excelonline/spring/orm_03/DataSource.xml"/>
+	<!-- <bean id = "ds" class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName">
 			<value>oracle.jdbc.driver.OracleDriver</value>
 		</property>
@@ -20,7 +21,7 @@
 		<property name="password">
 		<value>training</value>
 		</property>
-	</bean>
+	</bean> -->
 	
 	<bean id = "mySessionFactory" class = "org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref = "ds"/>
