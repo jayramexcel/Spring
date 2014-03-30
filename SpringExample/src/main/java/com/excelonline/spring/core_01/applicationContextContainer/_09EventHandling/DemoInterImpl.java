@@ -1,20 +1,17 @@
 package com.excelonline.spring.core_01.applicationContextContainer._09EventHandling;
 
-public class  DemoInterImpl  implements DemoInter
-{
-	private String  message;
+public class DemoInterImpl implements DemoInter {
+	private String message;
 
-	public DemoInterImpl()
-	{
+	public DemoInterImpl() {
 		System.out.println("Constructor executed");
 	}
-	public void setMessag(String s)
-	{
-		message=s;
+
+	public void setMessag(String s) {
+		message = s;
 	}
 
-	public String wish(String uname)
-	{
-		return   message+" "+uname+" Have a great day";
+	public String wish(String uname) {
+		return message + " " + uname + " Have a great day";
 	}
 }

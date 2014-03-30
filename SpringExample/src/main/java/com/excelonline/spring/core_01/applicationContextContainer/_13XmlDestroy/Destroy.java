@@ -19,7 +19,4 @@ public class Destroy
 		System.out.println("In  destructor of Destroy class");
 		
 	}
-
-	
-	
 }

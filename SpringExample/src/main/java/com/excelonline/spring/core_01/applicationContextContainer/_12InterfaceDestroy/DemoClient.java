@@ -18,7 +18,7 @@ public class DemoClient {
 		XmlBeanFactory factory = new XmlBeanFactory(res);
 		*/
 
-		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excel/core_01/applicationContextContainer/_12InterfaceDestroy/applicationContext.xml");
+		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excelonline/spring/core_01/applicationContextContainer/_12InterfaceDestroy/applicationContext.xml");
 		Destroy d = (Destroy) ctx.getBean("de");
 		
 		System.out.print(d);		

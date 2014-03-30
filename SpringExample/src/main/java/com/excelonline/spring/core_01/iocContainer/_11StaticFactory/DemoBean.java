@@ -1,29 +1,27 @@
 package com.excelonline.spring.core_01.iocContainer._11StaticFactory;
+
 import java.util.Calendar;
 
+public class DemoBean implements DemoInter {
 
-public class DemoBean implements DemoInter{
-
-	private Calendar cl = null;
+	private Calendar cal = null;
 	private TestBean tb = null;
-	
-	public DemoBean() {
-		// TODO Auto-generated constructor stub
-	}
 
-	public void setCl(Calendar cl) {
-		this.cl = cl;
+	public DemoBean() {
+		System.out.println("DemoBean.DemoBean()");
 	}
 
 	public void setTb(TestBean tb) {
 		this.tb = tb;
 	}
 
-	public String sayHello() {
-		
-		return "tb = "+tb.toString()+"   cl = "+cl.toString();
+	public void setCal(Calendar cal) {
+		this.cal = cal;
 	}
-	
-	
+
+	public String sayHello() {
+//		Calendar cal = Calendar.getInstance();
+		return "   cl = " + cal.toString();
+	}
 
 }

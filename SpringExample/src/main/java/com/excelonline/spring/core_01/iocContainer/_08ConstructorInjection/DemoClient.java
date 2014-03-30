@@ -12,7 +12,7 @@ public class   DemoClient
 {
 	public static void main(String args[])
 	{
-		Resource  res=new ClassPathResource("com/excel/core_01/iocContainer/_08ConstructorInjection/applicationContext.xml");
+		Resource  res=new ClassPathResource("com/excelonline/spring/core_01/iocContainer/_08ConstructorInjection/applicationContext.xml");
 		BeanFactory  factory=new XmlBeanFactory(res);
 		Demo d1=(Demo)factory.getBean("demo");
 		System.out.print(d1);

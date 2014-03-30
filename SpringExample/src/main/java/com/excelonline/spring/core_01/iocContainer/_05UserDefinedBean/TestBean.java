@@ -1,16 +1,13 @@
 package com.excelonline.spring.core_01.iocContainer._05UserDefinedBean;
 
-public class  TestBean
-{	
+public class TestBean {
 	private String message;
 
-	public void setMessage(String msg)
-	{
+	public void setMessage(String msg) {
 		this.message = msg;
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return message;
 	}
 }

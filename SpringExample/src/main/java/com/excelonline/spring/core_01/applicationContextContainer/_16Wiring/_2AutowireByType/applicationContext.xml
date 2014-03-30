@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 	<!-- Explicit wiring -->
-	<bean id="t1"
+	<bean 
 		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._2AutowireByType.TestBean">
 		<property name="msg">
 			<value>Gmg. friends... Have a Great Day Jayram</value>

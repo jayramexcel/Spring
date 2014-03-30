@@ -5,10 +5,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
-      <!--bean class="com.excelonline.spring.core_01.iocContainer._01FirstApp.DemoInterImpl">
+      <!-- <bean class="com.excelonline.spring.core_01.iocContainer._01FirstApp.DemoInterImpl">
 		<property  name="message" value="Hello"/>
-      </bean-->
+      </bean> -->
       
-      <bean class="com.excelonline.spring.core_01.iocContainer._01FirstApp.DemoInterImpl" p:message="Bravo">
+      <bean class="com.excelonline.spring.core_01.iocContainer._01FirstApp.DemoInterImpl" p:message="ExcelOnline" scope="prototye">
       </bean>
 </beans>

@@ -4,7 +4,7 @@
 
 <beans>
 
-	<bean id="dat" class="java.util.Date">
+	<bean id="datte" class="java.util.Date">
 		<property name="year">
 			<value>85</value>
 		</property>
@@ -20,12 +20,12 @@
 
 	<bean id="demo"
 		class="com.excelonline.spring.core_01.iocContainer._04PreDefinedBean.DemoInterImpl">
-		<property name="message">
+		<property name="nessage">
 			<value>Njoy Spring Programming :)</value>
 		</property>
 
 		<property name="dt">
-			<ref bean="dat" />  <!-- "dat" is identifier of Date class -->
+			<ref bean="datte" />  <!-- "dat" is identifier of Date class -->
 		</property>
 
 	</bean>

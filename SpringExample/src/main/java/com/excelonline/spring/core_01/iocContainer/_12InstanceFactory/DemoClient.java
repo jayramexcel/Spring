@@ -12,7 +12,7 @@ public class DemoClient {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ClassPathResource res = new ClassPathResource("com/excel/core_01/iocContainer/_12InstanceFactory/applicationContext.xml");
+		ClassPathResource res = new ClassPathResource("com/excelonline/spring/core_01/iocContainer/_12InstanceFactory/applicationContext.xml");
 		
 		XmlBeanFactory factory = new XmlBeanFactory(res);
 		

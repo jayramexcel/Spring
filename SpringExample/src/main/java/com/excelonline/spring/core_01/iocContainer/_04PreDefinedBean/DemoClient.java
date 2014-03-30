@@ -10,7 +10,7 @@ import org.springframework.core.io.Resource;
 
 public class   DemoClient {
 	public static void main(String args[])throws Exception {
-		Resource  res=new ClassPathResource("com/excel/core_01/iocContainer/_04PreDefinedBean/cfg/spring.cfg.xml");
+		Resource  res=new ClassPathResource("com/excelonline/spring/core_01/iocContainer/_04PreDefinedBean/cfg/spring.cfg.xml");
 		BeanFactory  factory=new XmlBeanFactory(res);
 		DemoInter d1=(DemoInter)factory.getBean("demo");
 		
@@ -20,7 +20,7 @@ public class   DemoClient {
 		d1.show();
 		Thread.sleep(1000);
 		
-		Date d = (Date)factory.getBean("dat");
+		Date d = (Date)factory.getBean("datte");
 		Thread.sleep(1000);
 		System.out.println(d);
 	}

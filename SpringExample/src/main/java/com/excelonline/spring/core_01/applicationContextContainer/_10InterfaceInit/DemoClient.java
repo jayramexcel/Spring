@@ -16,7 +16,7 @@ public class DemoClient {
 		
 		XmlBeanFactory factory = new XmlBeanFactory(res);*/
 
-		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excel/core_01/applicationContextContainer/_10InterfaceInit/applicationContext.xml");
+		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excelonline/spring/core_01/applicationContextContainer/_10InterfaceInit/applicationContext.xml");
 		Init i1 = (Init) ctx.getBean("in");
 		
 		System.out.print(i1);

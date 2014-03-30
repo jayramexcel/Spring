@@ -8,20 +8,20 @@ import org.springframework.core.io.Resource;
 
 public class   DemoClient
 {
+	
 	public static void main(String args[])
 	{
-//		Company comp = new Infosys();
+//		Company comp = new BikeCompany();
 //		System.out.println("DemoClient.main()" + comp.strength());
 //		System.out.println(comp.logoName());
 		
-		Resource  res = new ClassPathResource("com/excel/core_01/iocContainer/_00Demo/applicationContext.xml");
+		Resource  res = new ClassPathResource("com/excelonline/spring/core_01/iocContainer/_00Demo/applicationContext.xml");
 		BeanFactory  factory = new XmlBeanFactory(res);
 		
-		Company comp = (Company)factory.getBean("company");
-		System.out.println("DemoClient.main()" + comp.strength());
-		System.out.println(comp.logoName());
-		
-		
+//		Company comp = (Company)factory.getBean("company");
+		/*System.out.println("DemoClient.main()" + comp.strength());
+		System.out.println(comp.logoName());*/
+
 		//		DemoInterImpl d1 =(DemoInterImpl)  factory.getBean("demo");
 ////		
 //		System.out.println(d1.wish("friends"));

@@ -11,7 +11,11 @@
 			<value>GANoon. friends... Have a joyful time. :)</value>
 		</property>
 	</bean>
+	
 	<bean id="db"
 		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._4AutowireAutodetect.DemoBean"
 		autowire="autodetect" />
 </beans>
+
+<!--  If we are using autodetect : and your bean has got both constructor injection and setter injection , then constructor
+will take the higher precedence -->

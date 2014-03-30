@@ -10,7 +10,7 @@ public class DemoClient {
 	 */
 	public static void main(String[] args) {
 		
-		ClassPathResource res = new ClassPathResource("com/excel/core_01/iocContainer/_10ConstructorInjectionBeanTypes/spring.cfg.xml");
+		ClassPathResource res = new ClassPathResource("com/excelonline/spring/core_01/iocContainer/_10ConstructorInjectionBeanTypes/spring.cfg.xml");
 		
 		XmlBeanFactory factory = new XmlBeanFactory(res);
 		

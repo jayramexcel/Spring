@@ -26,18 +26,11 @@
 
 
       <bean  id="demo"  class="com.excelonline.spring.core_01.iocContainer._05UserDefinedBean.DemoInterImpl">
-		<property  name="age">
-			<value>26</value>
-		</property>
-
+		<property  name="age" value="26"/>
 		<property  name="dt">
 			<ref bean = "dat"/>
 		</property>
-
-		
 		<property  name="tb" ref = "tbean"/>
-		<!--	<ref bean = "tbean"/>
-		</property> -->
 
       </bean>
 

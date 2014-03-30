@@ -7,7 +7,7 @@ public class DemoClient
 {
 	public static void main(String args[])
 	{
-		Resource  res=new ClassPathResource("com/excel/core_01/iocContainer/_03MoreMethods/Demo.xml");
+		Resource  res=new ClassPathResource("com/excelonline/spring/core_01/iocContainer/_03MoreMethods/Demo.xml");
 		BeanFactory  factory=new XmlBeanFactory(res);
 
 		DemoInter d1=(DemoInter)factory.getBean("demo");

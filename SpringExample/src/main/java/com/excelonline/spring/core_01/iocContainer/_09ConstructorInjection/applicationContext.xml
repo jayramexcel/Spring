@@ -6,20 +6,21 @@
 	
 	<bean id = "be" class = "com.excelonline.spring.core_01.iocContainer._09ConstructorInjection.Bean">
 		<!-- sequence -->
-<!-- 		<constructor-arg value="1"/>
-	    <constructor-arg value="1.1"/>
-		<constructor-arg value="Gmg. It is with sequence"/>
- -->	 
-	 	<!-- type -->
-<!-- 		<constructor-arg type = "float" value="1.1"/>
+		
+		<!-- <constructor-arg value="1"/>
+		<constructor-arg value="1.1"/>
+		<constructor-arg value="Gmg. It is with sequence"/> -->
+		
+	 	<!-- help of datatype -->
+ 		<!-- <constructor-arg type = "float" value="1.1"/>
 		<constructor-arg type = "java.lang.String" value="Good Morning"/>
-		<constructor-arg type = "int" value="1"/>
- -->
+		<constructor-arg type = "int" value="1"/> -->
+
  	 	<!-- type -->
 
 		<!-- index - starts with 0 [zero] -->
 
-<!-- 		<constructor-arg index = "1">
+		<!-- <constructor-arg index = "1">
 			<value>1.1</value>
 		</constructor-arg>
 		
@@ -29,8 +30,7 @@
 		
 		<constructor-arg index = "0">
 			<value>1</value>
-		</constructor-arg> 
- -->
+		</constructor-arg>  -->
  
 <!-- combinations -->
 
