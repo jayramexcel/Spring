@@ -1,4 +1,4 @@
-package com.excelonline.spring.core_01.applicationContextContainer._17Wiring._4AutowireAutodetect;
+package com.excelonline.spring.core_01.applicationContextContainer._16Wiring._4AutowireAutodetect;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,13 +1,21 @@
-package com.excelonline.spring.core_01.applicationContextContainer._17Wiring._3AutowireConstructor;
+package com.excelonline.spring.core_01.applicationContextContainer._16Wiring._4AutowireAutodetect;
+
+
+
 public class DemoBean implements Demo{
+	
 	TestBean tb = null;
+	
+	/*
+	
 	public DemoBean() {
 		System.out.println("Zero arg constructor of DemoBean class");
 	}
+*/
 
 	public DemoBean(TestBean tb) {
 		System.out.println("One arg constructor of DemoBean class");
-		this.tb = tb;	
+		this.tb = tb;
 	}
 
 	public void setTb(TestBean tb) {
@@ -15,9 +23,8 @@ public class DemoBean implements Demo{
 		this.tb = tb;
 	}
 
-	public String hi()
-	{
-		return "Hi..."+tb.toString();
+	public String hi() {
+		return "Hi..."+tb;
 	}
 
 }

@@ -2,17 +2,15 @@ package com.excelonline.spring.core_01.applicationContextContainer._01FirstAppli
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+public class DemoClient {
+	public static void main(String args[]) {
 
-public class   DemoClient
-{
-	public static void main(String args[])
-	{
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(
+				"com/excelonline/spring/core_01/applicationContextContainer/_01FirstApplicationContext/spring.cfg.xml");
 
-		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excel/core_01/applicationContextContainer/_01FirstApplicationContext/spring.cfg.xml");
+		DemoInter d1 = (DemoInter) ctx.getBean("demo");
 
-		DemoInter d1=(DemoInter)ctx.getBean("demo");
-		
-		DemoInterImpl d2=(DemoInterImpl)ctx.getBean("demo");
+		DemoInterImpl d2 = (DemoInterImpl) ctx.getBean("demo");
 
 		System.out.println(d2.wish("friends"));
 

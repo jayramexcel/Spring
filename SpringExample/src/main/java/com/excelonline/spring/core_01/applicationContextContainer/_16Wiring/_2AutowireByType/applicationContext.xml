@@ -4,18 +4,18 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 	<!-- Explicit wiring -->
 	<bean id="t1"
-		class="com.excelonline.spring.core_01.applicationContextContainer._17Wiring._2AutowireByType.TestBean">
+		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._2AutowireByType.TestBean">
 		<property name="msg">
 			<value>Gmg. friends... Have a Great Day Jayram</value>
 		</property>
 	</bean>
 	
-	<!-- <bean id = "t2" class = "com.excelonline.spring.core_01.applicationContextContainer._17Wiring._2AutowireByType.TestBean"> 
+	<!-- <bean id = "t2" class = "com.excelonline.spring.core_01.applicationContextContainer._16Wiring._2AutowireByType.TestBean"> 
 		<property name="msg"> <value>Gmg.... friends Njoy this Beautiful life :)</value> 
 		</property> </bean> -->
 	 
 	<bean id="db"
-		class="com.excelonline.spring.core_01.applicationContextContainer._17Wiring._2AutowireByType.DemoBean"
+		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._2AutowireByType.DemoBean"
 		autowire="byType" />
 
 </beans>

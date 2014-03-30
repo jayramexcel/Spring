@@ -6,8 +6,8 @@ public class   DemoClient
 {
         public static void main(String args[]) {
 		String cfg[] = {
-				"com/excel/core_01/applicationContextContainer/_06MultipleCfgFiles/applicationContext1.xml",
-				"com/excel/core_01/applicationContextContainer/_06MultipleCfgFiles/applicationContext2.xml" };
+				"com/excelonline/spring/core_01/applicationContextContainer/_06MultipleCfgFiles/applicationContext1.xml",
+				"com/excelonline/spring/core_01/applicationContextContainer/_06MultipleCfgFiles/applicationContext2.xml" };
 
         	ApplicationContext  ctx = new ClassPathXmlApplicationContext(cfg);
 	

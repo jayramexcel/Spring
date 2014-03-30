@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class   DemoClient {
 	public static void main(String args[]) {
-		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excel/core_01/applicationContextContainer/_03InterfaceInjection/applicationContext.xml");
+		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excelonline/spring/core_01/applicationContextContainer/_03InterfaceInjection/applicationContext.xml");
 
 		Demo d1=(Demo)ctx.getBean("db");
 
 		//DemoImpl d2=(DemoImpl)ctx.getBean("db");
 		System.out.println(d1.hi());
-		Date d2=(Date)ctx.getBean("dt");
-		System.out.println(d2);
+		//Date d2=(Date)ctx.getBean("dt");
+		//System.out.println(d2);
 	}
 }

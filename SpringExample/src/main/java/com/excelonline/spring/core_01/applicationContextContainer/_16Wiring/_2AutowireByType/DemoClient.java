@@ -1,4 +1,4 @@
-package com.excelonline.spring.core_01.applicationContextContainer._17Wiring._2AutowireByType;
+package com.excelonline.spring.core_01.applicationContextContainer._16Wiring._2AutowireByType;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class   DemoClient

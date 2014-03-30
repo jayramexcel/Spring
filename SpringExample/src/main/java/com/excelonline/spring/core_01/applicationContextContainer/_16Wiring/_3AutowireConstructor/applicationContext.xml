@@ -12,13 +12,13 @@
 		</property>
 	</bean>
 -->
-		<bean id = "t3" class = "com.excelonline.spring.core_01.applicationContextContainer._17Wiring._3AutowireConstructor.TestBean"> 
+		<bean id = "t3" class = "com.excelonline.spring.core_01.applicationContextContainer._16Wiring._3AutowireConstructor.TestBean"> 
 		<property name="msg">
 			<value>Learn well. :)</value>
 		</property> 
 	</bean>
 	
-	<bean id = "db" class = "com.excelonline.spring.core_01.applicationContextContainer._17Wiring._3AutowireConstructor.DemoBean" autowire = "constructor">
+	<bean id = "db" class = "com.excelonline.spring.core_01.applicationContextContainer._16Wiring._3AutowireConstructor.DemoBean" autowire = "constructor">
 <!--	 <constructor-arg>
 			<ref bean = "t3"/>
 		</constructor-arg> -->

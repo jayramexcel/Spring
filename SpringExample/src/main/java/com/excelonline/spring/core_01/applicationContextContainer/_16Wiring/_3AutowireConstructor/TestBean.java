@@ -1,4 +1,4 @@
-package com.excelonline.spring.core_01.applicationContextContainer._17Wiring._3AutowireConstructor;
+package com.excelonline.spring.core_01.applicationContextContainer._16Wiring._3AutowireConstructor;
 public class TestBean {
 	String msg;
 	public TestBean() {

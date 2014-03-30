@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
 	<bean id="tb"
-		class="com.excelonline.spring.core_01.applicationContextContainer._17Wiring._1AutowireByName.TestBean"> <!-- Explicit wiring -->
+		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._1AutowireByName.TestBean"> <!-- Explicit wiring -->
 		<property name="msg">
 			<value>Very GM Auto Wire By Name</value>
 		</property>
@@ -15,14 +15,14 @@
 		injection values will be overridden by autowiring values -->
 	<!-- Explicit wiring -->
 	<bean id="tb1"
-		class="com.excelonline.spring.core_01.applicationContextContainer._17Wiring._1AutowireByName.TestBean">
+		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._1AutowireByName.TestBean">
 		<property name="msg">
 			<value>Good noon friends By Constructor</value>
 		</property>
 	</bean>
 	
 	<bean id="db"
-		class="com.excelonline.spring.core_01.applicationContextContainer._17Wiring._1AutowireByName.DemoBean"
+		class="com.excelonline.spring.core_01.applicationContextContainer._16Wiring._1AutowireByName.DemoBean"
 		autowire="byName">
 		<!-- <property name="tb"> <ref bean = "tb1"/> </property> -->
 		<constructor-arg>

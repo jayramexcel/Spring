@@ -8,14 +8,18 @@ import java.util.ResourceBundle;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class I18nApp { 
+public class I18nApp {
 	public static void main(String args[]) {
 
-//		ResourceBundle r = ResourceBundle.getBundle("com/excel/core_01/applicationContextContainer/_07I18n/app");
+		// ResourceBundle r =
+		// ResourceBundle.getBundle("com/excel/core_01/applicationContextContainer/_07I18n/app");
 
-		Locale locale = new Locale("en", "gb");
-//		Locale locale = new Locale("en");
-		ResourceBundle r = ResourceBundle.getBundle("com/excel/core_01/applicationContextContainer/_07I18n/app",locale);
+		Locale locale = new Locale("en");
+//		 Locale locale = new Locale("fr","be");
+		ResourceBundle r = ResourceBundle
+				.getBundle(
+						"com/excelonline/spring/core_01/applicationContextContainer/_07I18n/app",
+						locale);
 
 		JFrame jf = new JFrame();
 

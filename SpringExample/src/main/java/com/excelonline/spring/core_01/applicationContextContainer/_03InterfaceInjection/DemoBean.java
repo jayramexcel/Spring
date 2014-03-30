@@ -24,7 +24,8 @@ public class DemoBean implements Demo, BeanNameAware, ApplicationContextAware{
 		this.bname = bname;
 	}
 	public String hi() {
-		System.out.println("Logical current bean name is: "+bname);
+		System.out.println("DemoBean.hi()" + ctx.getClass());
+		System.out.println("Logical Name of Bean is: "+bname);
 		System.out.println("No. of beans managed by underlying container are: "+ctx.getBeanDefinitionCount());
 		System.out.println("Current bean is singleton: "+ctx.isSingleton(bname));
 		System.out.println("Current bean is proptotype bean: "+ctx.isPrototype(bname));

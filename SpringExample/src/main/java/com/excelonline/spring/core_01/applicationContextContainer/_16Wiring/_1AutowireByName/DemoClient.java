@@ -1,4 +1,4 @@
-package com.excelonline.spring.core_01.applicationContextContainer._17Wiring._1AutowireByName;
+package com.excelonline.spring.core_01.applicationContextContainer._16Wiring._1AutowireByName;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
