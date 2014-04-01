@@ -9,7 +9,7 @@
 	<bean id="advr"
 		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
 		<property name="advice">
-			<ref local="adv" />
+			<ref  local="adv" />
 		</property>
 		<property name="pattern">
 			<value>.*</value>
