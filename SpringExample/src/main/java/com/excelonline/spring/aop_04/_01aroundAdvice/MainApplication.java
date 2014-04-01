@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"com/excel/aop_04/_01aroundAdvice/springconfig.xml");
+				"com/excelonline/spring/aop_04/_01aroundAdvice/springconfig.xml");
 		IBusinessLogic testObject = (IBusinessLogic) ctx.getBean("proxyobj");
 		testObject.deposit();
 		// testObject.withdraw();

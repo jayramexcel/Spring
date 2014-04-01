@@ -8,7 +8,7 @@ public class LogAfterReturningAdvice implements AfterReturningAdvice{
 
 
 	public LogAfterReturningAdvice() {
-		System.out.println("LogAfterReturningAdvice.LogAfterReturningAdvice()");
+//		System.out.println("LogAfterReturningAdvice.LogAfterReturningAdvice()");
 	}
 
 

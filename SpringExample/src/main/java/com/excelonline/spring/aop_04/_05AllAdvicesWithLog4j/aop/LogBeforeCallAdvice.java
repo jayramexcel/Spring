@@ -9,7 +9,7 @@ public class LogBeforeCallAdvice implements MethodBeforeAdvice {
 
 	public LogBeforeCallAdvice()
 	{
-		System.out.println("LogBeforeCallAdvice.LogBeforeCallAdvice()");
+//		System.out.println("LogBeforeCallAdvice.LogBeforeCallAdvice()");
 	}
 
 	public void before(Method method, Object[] args, Object target)throws Throwable {

@@ -3,7 +3,7 @@
   "http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
 
-<bean id="ad" class="com.excel.aop_04._03Parameters.AroundAdvice"/>
+<bean id="ad" class="com.excelonline.spring.aop_04._03Parameters.AroundAdvice"/>
 
  <bean id="advisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
       <property name="advice">
@@ -13,12 +13,12 @@
          <value>.*</value>
       </property>
    </bean>
-  <bean id="beanTarget" class="com.excel.aop_04._03Parameters.BusinessLogic"/>
+  <bean id="beanTarget" class="com.excelonline.spring.aop_04._03Parameters.BusinessLogic"/>
   
    <bean id="proxyobj" class=
    "org.springframework.aop.framework.ProxyFactoryBean">
       <property name="proxyInterfaces">
-         <value>com.excel.aop_04._03Parameters.IBusinessLogic</value>
+         <value>com.excelonline.spring.aop_04._03Parameters.IBusinessLogic</value>
       </property>
       <property name="target">
          <ref local="beanTarget"/>

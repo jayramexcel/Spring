@@ -10,7 +10,7 @@ public class AroundAdvice implements MethodInterceptor {
 		int x = ((Integer)i1.getArguments()[0]).intValue();   
 		String y=(String)i1.getArguments()[1];
 		
-		if( x <= 0  )
+		if( x >= 0  )
 			i1.getArguments()[0] = new Integer(101);
 		if(  y.length() <= 3)
 			i1.getArguments()[1]="sathya tech"; 

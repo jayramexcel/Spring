@@ -5,6 +5,6 @@ public class BusinessLogic implements IBusinessLogic {
 		System.out.println("");
 		System.out.println("execution of method1");
 		System.out.println("");
-		return 1000;
+		return 10;
 	}
 }

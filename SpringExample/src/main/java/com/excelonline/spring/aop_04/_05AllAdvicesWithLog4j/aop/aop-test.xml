@@ -5,21 +5,21 @@
 <beans>
 	<!-- Advices -->
 	<bean id="beforeCall"
-		class="com.excel.aop_04._05AllAdvicesWithLog4j.aop.LogBeforeCallAdvice" />
+		class="com.excelonline.spring.aop_04._05AllAdvicesWithLog4j.aop.LogBeforeCallAdvice" />
 	<bean id="afterCall"
-		class="com.excel.aop_04._05AllAdvicesWithLog4j.aop.LogAfterReturningAdvice" />
+		class="com.excelonline.spring.aop_04._05AllAdvicesWithLog4j.aop.LogAfterReturningAdvice" />
 	<bean id="throwCall"
-		class="com.excel.aop_04._05AllAdvicesWithLog4j.aop.LogAfterThrowsAdvice" />
+		class="com.excelonline.spring.aop_04._05AllAdvicesWithLog4j.aop.LogAfterThrowsAdvice" />
 	<bean id="aroundCall"
-		class="com.excel.aop_04._05AllAdvicesWithLog4j.aop.LogAroundAdvice" />
+		class="com.excelonline.spring.aop_04._05AllAdvicesWithLog4j.aop.LogAroundAdvice" />
 		
 	<!-- Implementation Class -->
-	<bean id="adderImpl" class="com.excel.aop_04._05AllAdvicesWithLog4j.aop.AdderImpl" />
+	<bean id="adderImpl" class="com.excelonline.spring.aop_04._05AllAdvicesWithLog4j.aop.AdderImpl" />
 	<!-- Proxy Implementation Class -->
 	
 	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="proxyInterfaces">
-			<value>com.excel.aop_04._05AllAdvicesWithLog4j.aop.Adder</value>
+			<value>com.excelonline.spring.aop_04._05AllAdvicesWithLog4j.aop.Adder</value>
 		</property>
 		
 		<property name="interceptorNames">
