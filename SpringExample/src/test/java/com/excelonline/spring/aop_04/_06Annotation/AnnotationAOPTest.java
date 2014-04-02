@@ -1,6 +1,6 @@
-package info._7chapters.spring.core;
+package com.excelonline.spring.aop_04._06Annotation;
 
-import info._7chapters.spring.aop.customer.Customer;
+import com.excelonline.spring.aop_04._06Annotation.customer.Customer;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -9,16 +9,16 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 
 /**
- * @author Jayram
+ * @author Jayram Rout
  *
  */
-@ContextConfiguration(locations={"Spring-Customer.xml"})
-public class AppTest {
+@ContextConfiguration(locations={"Spring-AOP-Annotation-Customer.xml"})
+public class AnnotationAOPTest {
 	ApplicationContext context;
 
 	@Before
 	public void setup(){
-		context = new ClassPathXmlApplicationContext("Spring-Customer.xml");
+		context = new ClassPathXmlApplicationContext("Spring-AOP-Annotation-Customer.xml");
 	}
 	@Test
 	public void testCustomer() throws Exception {

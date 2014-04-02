@@ -1,4 +1,4 @@
-package info._7chapters.spring.aop.aspect;
+package com.excelonline.spring.aop_04._06Annotation.aspect;
 
 import java.util.Arrays;
 
@@ -14,21 +14,21 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class LoggingAspect {
 
-	@Before("execution(* info._7chapters.spring.aop.customer.Customer.addCustomer(..))")
+	@Before("execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomer(..))")
 	public void logBefore(JoinPoint joinPoint) {
 		System.out.println("logBefore() is running!");
 		System.out.println("hijacked : " + joinPoint.getSignature().getName());
 		System.out.println("****** ");
 	}
 
-	@After("execution(* info._7chapters.spring.aop.customer.Customer.addCustomer(..))")
+	@After("execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomer(..))")
 	public void logAfter(JoinPoint joinPoint) {
 		System.out.println("logAfter() is running!");
 		System.out.println("hijacked : " + joinPoint.getSignature().getName());
 		System.out.println("******");
 	}
 
-	@AfterReturning( pointcut = "execution(* info._7chapters.spring.aop.customer.Customer.addCustomerReturnValue(..))",
+	@AfterReturning( pointcut = "execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomerReturnValue(..))",
 			returning= "result")
 	public void logAfterReturning(JoinPoint joinPoint, Object result) {
 		System.out.println("logAfterReturning() is running!");
@@ -38,7 +38,7 @@ public class LoggingAspect {
 	}
 	
 	@AfterThrowing(
-			pointcut = "execution(* info._7chapters.spring.aop.customer.Customer.addCustomerThrowException(..))",
+			pointcut = "execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomerThrowException(..))",
 			throwing= "error")
 	public void logAfterThrowing(JoinPoint joinPoint, Throwable error) {
 		System.out.println("logAfterThrowing() is running!");
@@ -47,7 +47,7 @@ public class LoggingAspect {
 		System.out.println("******");
 	}
 	
-	@Around("execution(* info._7chapters.spring.aop.customer.Customer.addCustomerAround(..))")
+	@Around("execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomerAround(..))")
 	public void logAround(ProceedingJoinPoint joinPoint) throws Throwable {
 		System.out.println("logAround() is running!");
 		System.out.println("hijacked method : " + joinPoint.getSignature().getName());

@@ -1,4 +1,4 @@
-package info._7chapters.spring.aop.customer;
+package com.excelonline.spring.aop_04._06Annotation.customer;
 
 
 public class CustomerImpl implements Customer {

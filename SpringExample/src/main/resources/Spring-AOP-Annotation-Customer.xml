@@ -9,40 +9,40 @@
 -->
 	<aop:aspectj-autoproxy />
 
-	<bean id="customerBo" class="info._7chapters.spring.aop.customer.CustomerImpl"/>
+	<bean id="customerBo" class="com.excelonline.spring.aop_04._06Annotation.customer.CustomerImpl"/>
 
 	<!-- Aspect -->
-	<bean id="logAspect" class="info._7chapters.spring.aop.aspect.LoggingAspect" />
+	<bean id="logAspect" class="com.excelonline.spring.aop_04._06Annotation.aspect.LoggingAspect" />
 
 	<!-- <aop:config>
 		<aop:aspect id="aspectLoggging" ref="logAspect" >
 
 			@Before
 			<aop:pointcut id="pointCutBefore"
-				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomer(..))" />
+				expression="execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomer(..))" />
 			<aop:before method="logBefore" pointcut-ref="pointCutBefore" />
 			
 			@After
 			<aop:pointcut id="pointCutAfter"
-				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomer(..))" />
+				expression="execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomer(..))" />
 			<aop:after method="logAfter" pointcut-ref="pointCutAfter" />
 			
 			
 			@AfterReturning
 			<aop:pointcut id="pointCutAfterReturning"
-				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomerReturnValue(..))" />
+				expression="execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomerReturnValue(..))" />
 			<aop:after-returning method="logAfterReturning" returning="result" 
 				pointcut-ref="pointCutAfterReturning" />
 			
 			@AfterThrowing
 			<aop:pointcut id="pointCutAfterThrowing"
-				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomerThrowException(..))" />
+				expression="execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomerThrowException(..))" />
 			<aop:after-throwing method="logAfterThrowing" throwing="error" 
 				pointcut-ref="pointCutAfterThrowing"  />
 			
 			@Around
 			<aop:pointcut id="pointCutAround"
-				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomerAround(..))" />
+				expression="execution(* com.excelonline.spring.aop_04._06Annotation.customer.Customer.addCustomerAround(..))" />
 			<aop:around method="logAround" pointcut-ref="pointCutAround"  />
 		</aop:aspect>
 
