@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-	<import resource="classpath:com/excel/dao_02/DataSource.xml"/>
+	<import resource="classpath:com/excelonline/spring/dao_02/DataSource.xml"/>
 
 	<bean id="namedTemplate"
 		class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
