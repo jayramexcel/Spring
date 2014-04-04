@@ -18,7 +18,7 @@ public class JdbcTemplateClient
     	//it's better to create an unit test rather than testing like this :)
     	
     	 ApplicationContext context = 
-    		new ClassPathXmlApplicationContext("com/excel/dao_02/_06RowMapper/employee/Employee.xml");
+    		new ClassPathXmlApplicationContext("com/excelonline/spring/dao_02/_06RowMapper/employee/Employee.xml");
     	 
     	 EmployeeDAO employeeDAO = (EmployeeDAO) context.getBean("customerDAO");
 //         Employee emp1 = new Employee(1, "Testing1","21");
