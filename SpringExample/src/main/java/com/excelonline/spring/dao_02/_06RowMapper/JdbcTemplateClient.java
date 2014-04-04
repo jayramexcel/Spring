@@ -21,16 +21,16 @@ public class JdbcTemplateClient
     		new ClassPathXmlApplicationContext("com/excelonline/spring/dao_02/_06RowMapper/employee/Employee.xml");
     	 
     	 EmployeeDAO employeeDAO = (EmployeeDAO) context.getBean("customerDAO");
-//         Employee emp1 = new Employee(1, "Testing1","21");
-//         Employee emp3 = new Employee(2, "Testing2","22");
-//         Employee emp2 = new Employee(3, "Testing3","23");
-//  
-//         List<Employee>employees = new ArrayList<Employee>();
-//         employees.add(emp1);
-//         employees.add(emp2);
-//         employees.add(emp3);
-//  
-//         employeeDAO.insertBatch(employees);
+         Employee emp1 = new Employee(1, "Testing1","21");
+         Employee emp3 = new Employee(2, "Testing2","22");
+         Employee emp2 = new Employee(3, "Testing3","23");
+  
+         List<Employee>employees = new ArrayList<Employee>();
+         employees.add(emp1);
+         employees.add(emp2);
+         employees.add(emp3);
+  
+         employeeDAO.insertBatch(employees);
 
 //         String sql = "UPDATE EMPLOYEES SET SALARY =5000 where EMPLOYEE_ID=104";
 //        employeeDAO.insertBatchSQL(sql);
@@ -59,8 +59,8 @@ public class JdbcTemplateClient
 //         System.out.println("Total : " + total);
 //         
          //delete all records
-         employeeDAO.insertBatchSQL("DELETE FROM Employee_bk");
-         System.out.println("Records Deleted!");
+//         employeeDAO.insertBatchSQL("DELETE FROM Employee_bk");
+//         System.out.println("Records Deleted!");
          
        
     }
