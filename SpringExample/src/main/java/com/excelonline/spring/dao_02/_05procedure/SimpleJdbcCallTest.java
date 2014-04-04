@@ -23,9 +23,9 @@ public class SimpleJdbcCallTest {
 	public static void main(String args[]) {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-		dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		dataSource.setUsername("hr");
-		dataSource.setPassword("hr");			
+		dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
+		dataSource.setUsername("HR");
+		dataSource.setPassword("HR");			
 		Employee emp =(Employee) 
 				getEmployeeDetailsWithStoredProcedure(dataSource,"Lex");
 		System.out.println("Allen Details : " + emp);
@@ -40,22 +40,22 @@ public class SimpleJdbcCallTest {
 		//set outparmeter values to emp object
 		Employee emp = new Employee();
 		emp.setName(ename);
-		emp.setNo((Integer)results.get("EMPLOYEE_ID"));
-//		emp.setDesignation((String)results.get("DESG"));
-//		emp.setSalary((Double)results.get("SALARY"));
+		emp.setNo((Integer)results.get("NO"));
+ 		emp.setDesignation((String)results.get("DESG"));
+ 		emp.setSalary((Double)results.get("SALARY"));
 
 		return emp;
 	}//method2
 	private static class MyStoredProcedure extends StoredProcedure {
 		public MyStoredProcedure(DataSource ds) {
-			super(ds, "SHOW_EMPLOYEES");
+			super(ds, "GET_EMP_DATA");
 			this.setFunction(false); //false -> indicates its a stored procedure
 
 			SqlParameter[] params = {
-					new SqlParameter("FIRST_NAME", Types.VARCHAR),
-					new SqlOutParameter("EMPLOYEE_ID", Types.INTEGER),
-//					new SqlOutParameter("DESG", Types.VARCHAR),
-//					new SqlOutParameter("SALARY", Types.DOUBLE)
+					new SqlParameter("NAME", Types.VARCHAR),
+					new SqlOutParameter("NO", Types.INTEGER),
+ 					new SqlOutParameter("DESG", Types.VARCHAR),
+ 					new SqlOutParameter("SALARY", Types.DOUBLE)
 			};
 			this.setParameters(params);
 			compile();
@@ -63,7 +63,7 @@ public class SimpleJdbcCallTest {
 
 		public Map myexecute(String name) {
 			HashMap map = new HashMap();
-			map.put("FIRST_NAME",name);
+			map.put("NAME",name);
 			return super.execute(map);
 		}
 
