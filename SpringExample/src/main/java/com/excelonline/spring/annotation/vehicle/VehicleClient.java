@@ -9,5 +9,7 @@ public class VehicleClient {
 	public static void main(String arg[]){
 		String appXML = "com/excelonline/spring/annotation/vehicle/applicationContext.xml";
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(appXML);
+//		Vehicle vehicle = (Vehicle)ctx.getBean("vehicle");
+		
 	}
 }
