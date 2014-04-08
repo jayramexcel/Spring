@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<!--Active this if you want to use annotation based -->
+	<!--Active this if you want to use annotation based and comment all the others below it !!!-->
 	<!-- <context:component-scan base-package="com.excel.controllers"/> -->
 
 	<!-- SimpleUrlHandlerMapping Below -->
@@ -33,8 +33,7 @@
 
 	<!-- BeanNameUrlHandlerMapping Below which is default -->
 	<!-- <bean name="/hi.htm" class="com.excel.controllers.HiController"
-		p:message=" 
-		I am from BeanNameURL" /> -->
+		p:message="I am from BeanNameURL" /> -->
 		
 	<bean name="customerController" class="com.excel.customer.controller.CustomerController">
 		<property name="formView" value="CustomerForm" />
