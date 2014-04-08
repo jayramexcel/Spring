@@ -16,60 +16,11 @@
 	</properties>
 
 	<dependencies>
-
-		
-		<!-- <dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>${spring.version}</version>
-		</dependency> -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>4.1.9.Final</version>
 		</dependency>
-
-		<!-- Spring core & mvc -->
-		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-context</artifactId> 
-			<version>${spring.version}</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
-			<artifactId>spring-webmvc</artifactId> <version>${spring.version}</version> 
-			</dependency> <dependency> <groupId>org.springframework</groupId> <artifactId>spring-orm</artifactId> 
-			<version>${spring.version}</version> <type>jar</type> <scope>compile</scope> 
-			</dependency> <dependency> <groupId>javax.inject</groupId> <artifactId>javax.inject</artifactId> 
-			<version>${inject.version}</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
-			<artifactId>spring-test</artifactId> <version>${spring.version}</version> 
-			<type>jar</type> <scope>test</scope> </dependency> -->
-
-		<!-- CGLib for @Configuration -->
-		<!-- <dependency> <groupId>cglib</groupId> <artifactId>cglib-nodep</artifactId> 
-			<version>${cglib.version}</version> <scope>runtime</scope> </dependency> -->
-
-
-		<!-- Servlet Spec -->
-		<!-- <dependency> <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> 
-			<version>2.4</version> <scope>provided</scope> </dependency> <dependency> 
-			<groupId>javax.servlet.jsp</groupId> <artifactId>jsp-api</artifactId> <version>2.1</version> 
-			<scope>provided</scope> </dependency> -->
 
 		<dependency>
 			<groupId>tomcat</groupId>
@@ -120,6 +71,16 @@
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.7.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
 		</dependency>
 	</dependencies>
 
